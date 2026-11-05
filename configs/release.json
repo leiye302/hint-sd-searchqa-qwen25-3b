@@ -1,0 +1,8 @@
+{
+  "size": "3b",
+  "family": "Qwen2.5",
+  "hardware": "4xA100-80GB",
+  "method": "official HINT-SD-Multi; EMA LoRA, selected-turn reverse KL",
+  "training_processes": 1,
+  "inference_replicas": 3
+}
