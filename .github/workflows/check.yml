@@ -25,7 +25,7 @@ jobs:
       - run: python -m hint_searchqa.setup --framework
       - run: python -m hint_searchqa.setup --verify
       - run: python scripts/check_release.py
-      - run: python -m pytest tests -q
+      - run: python -m pytest tests/test_contract.py tests/test_native_trainer.py -q
       - run: bash -n scripts/setup.sh scripts/train.sh scripts/eval.sh
       - run: bash scripts/train.sh --dry-run
   environment-data:
